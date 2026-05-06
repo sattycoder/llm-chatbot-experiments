@@ -18,6 +18,10 @@ app=FastAPI(
     version='1.0',
     description='A simple API Server',
 )
+
+@app.get("/hello")
+def hello():
+    return {"message": "hello"}
 '''
 add_routes(
     app,
